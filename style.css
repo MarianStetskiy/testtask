@@ -1,0 +1,123 @@
+/* Основные стили */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Стили для контейнера */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Стили для шапки */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-info a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* Стили для главного баннера */
+.main-banner {
+  background-image: url("banner-background.jpg");
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.main-banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.main-banner h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.main-banner p {
+  font-size: 18px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.cta-button {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: #fff;
+  text-decoration: none;
+}
+
+.product-image img {
+  max-width: 100%;
+}
+
+/* Стили для формы обратной связи */
+form {
+  margin: 20px auto;
+  max-width: 300px;
+}
+
+input,
+button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+/* Другие стили можно добавить по вашему усмотрению */
