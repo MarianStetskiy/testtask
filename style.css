@@ -1,8 +1,9 @@
 /* Основные стили */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
+  color: #000;
 }
 
 /* Стили для контейнера */
@@ -14,8 +15,7 @@ body {
 
 /* Стили для шапки */
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: #d5b59c;
   padding: 10px 0;
 }
 
@@ -36,8 +36,15 @@ header {
 }
 
 .logo a {
-  color: #fff;
+  display: flex;
+  align-items: center;
+  color: #000;
   text-decoration: none;
+  transition: 0.5s;
+}
+.logo a:hover {
+  color: #ad8762;
+  transition: 0.5s;
 }
 
 nav ul {
@@ -52,23 +59,33 @@ nav li {
 }
 
 nav a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
+  transition: 0.5s;
+}
+
+nav a:hover {
+  color: #ad8762;
+  transition: 0.5s;
 }
 
 .contact-info a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
   margin-right: 10px;
+  transition: 0.5s;
+}
+
+.contact-info a:hover {
+  color: #ad8762;
+  transition: 0.5s;
 }
 
 /* Стили для главного баннера */
 .main-banner {
-  background-image: url("banner-background.jpg");
-  background-size: cover;
-  color: #fff;
+  color: #ad8762;
   text-align: center;
-  padding: 100px 0;
+  padding: 80px 0;
 }
 
 .main-banner-content {
@@ -81,43 +98,74 @@ nav a {
 .main-banner h1 {
   font-size: 36px;
   margin: 0;
+  color: #ad8762;
 }
 
 .main-banner p {
   font-size: 18px;
+  color: #000;
 }
 
 .cta-buttons {
   display: flex;
   justify-content: center;
-  margin: 20px 0;
 }
 
 .cta-button {
+  border: none;
   display: inline-block;
   margin: 10px;
   padding: 10px 20px;
-  background-color: #ff6600;
-  color: #fff;
+  background-color: #d5b59c;
+  color: #000;
   text-decoration: none;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.cta-button:hover {
+  background-color: #ad8762;
+  transition: 0.5s;
+}
+
+.product-image {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 0;
 }
 
 .product-image img {
-  max-width: 100%;
+  height: 100%;
 }
 
+.product-image-text {
+  text-align: justify;
+}
 /* Стили для формы обратной связи */
 form {
-  margin: 20px auto;
+  border-radius: 20px;
+  border: solid #d5b59c;
   max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  color: #000;
 }
 
-input,
-button {
+form p {
+  margin: 0;
+}
+
+input {
   display: block;
+  box-sizing: border-box;
+  outline: none;
+  height: 100%;
   width: 100%;
-  margin: 10px 0;
-  padding: 10px;
+  border: solid #d5b59c;
+  border-radius: 20px;
+  padding: 5px 20px;
 }
-
-/* Другие стили можно добавить по вашему усмотрению */
